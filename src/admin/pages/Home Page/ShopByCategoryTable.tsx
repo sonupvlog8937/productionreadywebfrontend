@@ -1,5 +1,5 @@
-import React from 'react'
-import HomeCategoryCard from '../../../customer/pages/Home/HomeCategory/HomeCategoryCard'
+// import React from 'react'
+// import HomeCategoryCard from '../../../customer/pages/Home/HomeCategory/HomeCategoryCard'
 import HomeCategoryTable from './HomeCategoryTable'
 import { useAppSelector } from '../../../Redux Toolkit/Store';
 

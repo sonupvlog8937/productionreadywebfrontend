@@ -31,7 +31,7 @@ interface AddressFormProp {
   paymentGateway:string
 }
 
-const AddressForm:React.FC<AddressFormProp> = ({handleClose,paymentGateway}) => {
+const AddressForm:React.FC<AddressFormProp> = ({paymentGateway}) => {
   const dispatch=useAppDispatch()
   const formik = useFormik({
     initialValues: {

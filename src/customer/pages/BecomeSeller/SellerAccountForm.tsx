@@ -110,7 +110,7 @@ const SellerAccountForm = () => {
                         onClick={() => handleStep(-1)}
                         variant="contained"
                     >
-                        Back
+                        Back{otp}
                     </Button>
                     <Button
                     disabled={sellerAuth.loading}

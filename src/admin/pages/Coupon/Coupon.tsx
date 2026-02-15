@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import CouponTable from './CouponTable'
 import { useAppDispatch } from '../../../Redux Toolkit/Store'
 import { fetchAllCoupons } from '../../../Redux Toolkit/Admin/AdminCouponSlice'

@@ -1,5 +1,5 @@
-import { Alert, Button, CircularProgress, Snackbar, TextField } from '@mui/material'
-import React, { useEffect, useState } from 'react'
+import { Button, CircularProgress, TextField } from '@mui/material'
+import { useEffect, useState } from 'react'
 
 import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
 import { useNavigate } from 'react-router-dom';
@@ -105,7 +105,7 @@ const AdminLoginForm = () => {
                     />
                     <p className="text-xs space-x-2">
                         {isTimerActive ? (
-                            <span>Resend OTP in {timer} seconds</span>
+                            <span>Resend OTP in {timer} {isOtpSent} seconds</span>
                         ) : (
                             <>
                                 Didn’t receive OTP?{" "}

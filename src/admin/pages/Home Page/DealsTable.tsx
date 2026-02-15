@@ -1,12 +1,12 @@
-import { Box, Button, IconButton, Modal, Paper, styled, Table, TableBody, TableCell, tableCellClasses, TableContainer, TableHead, TableRow } from '@mui/material'
+import { Box, IconButton, Modal, Paper, styled, Table, TableBody, TableCell, tableCellClasses, TableContainer, TableHead, TableRow } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 // import {Deal} from '../../../types/dealTypes';
 import { useAppDispatch, useAppSelector } from '../../../Redux Toolkit/Store';
 import EditIcon from '@mui/icons-material/Edit';
 import { deleteDeal, getAllDeals } from '../../../Redux Toolkit/Admin/DealSlice';
 import UpdateDealForm from './UpdateDealForm';
-import CreateDealForm from './CreateDealForm';
-import DeleteIcon from '@mui/icons-material/Delete';
+// import CreateDealForm from './CreateDealForm';
+// import DeleteIcon from '@mui/icons-material/Delete';
 import { Delete } from '@mui/icons-material';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -41,7 +41,7 @@ const style = {
   p: 4,
 };
 const DealsTable = () => {
-  const { homePage,deal } = useAppSelector(store => store)
+  const { deal } = useAppSelector(store => store)
   const [selectedDealId, setSelectedDealId] = useState<number>();
   const [open, setOpen] = React.useState(false);
   // const [openCreateDealForm, setOpenCreateDealForm] = React.useState(false);

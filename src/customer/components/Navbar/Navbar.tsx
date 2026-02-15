@@ -19,7 +19,7 @@ import CategorySheet from "./CategorySheet";
 import DrawerList from "./DrawerList";
 import { useNavigate} from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import { useAppDispatch, useAppSelector } from "../../../Redux Toolkit/Store";
+import { useAppSelector } from "../../../Redux Toolkit/Store";
 
 import { FavoriteBorder } from "@mui/icons-material";
 
@@ -29,8 +29,8 @@ const Navbar = () => {
   const [selectedCategory, setSelectedCategory] = useState("men");
   const theme = useTheme();
   const isLarge = useMediaQuery(theme.breakpoints.up("lg"));
-  const dispatch = useAppDispatch();
-  const { user, auth, cart, sellers } = useAppSelector((store) => store);
+  // const dispatch = useAppDispatch();
+  const { user, cart, sellers } = useAppSelector((store) => store);
   const navigate = useNavigate();
   
 

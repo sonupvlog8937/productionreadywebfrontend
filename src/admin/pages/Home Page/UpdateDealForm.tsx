@@ -1,6 +1,6 @@
 // UpdateDealForm.tsx
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import {
@@ -32,7 +32,7 @@ const initialValues = {
 };
 
 const UpdateDealForm = ({ id }: { id: number }) => {
-    const { admin } = useAppSelector((store) => store);
+    const {  } = useAppSelector((store) => store);
     const dispatch = useAppDispatch();
     const formik = useFormik({
         initialValues,

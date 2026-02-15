@@ -35,7 +35,7 @@ const FilterSection = () => {
 
   const clearAllFilters = () => {
     console.log("clearAllFilters",searchParams)
-    searchParams.forEach((value: any, key: any) => {
+    searchParams.forEach((_value: any, key: any) => {
       searchParams.delete(key);
     });
     setSearchParams(searchParams);

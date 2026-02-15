@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import AdminRoutes from '../../../routes/AdminRoutes'
 // import DrawerList from './DrawerList'
 import Navbar from '../../../admin seller/components/navbar/Navbar'
